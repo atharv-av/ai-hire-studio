@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { AuthProvider } from "@/context/auth-provider";
 import { Toaster } from "@/components/ui/toaster";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,8 +38,8 @@ export default function RootLayout({
           {children}
           <Toaster />
         </AuthProvider>
+        <GoogleAnalytics gaId="G-DJLSVG3ZFM" />
       </body>
-      <GoogleAnalytics gaId="G-DJLSVG3ZFM" />
     </html>
   );
 }
